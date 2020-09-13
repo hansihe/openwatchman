@@ -1,0 +1,257 @@
+EESchema Schematic File Version 4
+LIBS:ts4231_breakout-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ts4231_breakout-rescue:TS4231 U1
+U 1 1 5A201B7B
+P 10050 2050
+F 0 "U1" H 10050 1500 60  0000 C CNN
+F 1 "TS4231" H 10050 2600 60  0000 C CNN
+F 2 "random_stuff:WLCSP-3x3" H 10550 1750 60  0001 C CNN
+F 3 "https://www.triadsemi.com/wp-content/uploads/dlm_uploads/2017/06/triad_semi_ts4231_datasheet_rev_a.pdf" H 10550 1750 60  0001 C CNN
+	1    10050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ts4231_breakout-rescue:R_Small R1
+U 1 1 5A201C09
+P 8850 2150
+F 0 "R1" H 8880 2170 50  0000 L CNN
+F 1 "15k 1%" H 8880 2110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 8850 2150 50  0001 C CNN
+F 3 "" H 8850 2150 50  0001 C CNN
+	1    8850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2050 8850 1950
+Wire Wire Line
+	8850 1950 9650 1950
+$Comp
+L ts4231_breakout-rescue:GND #PWR3
+U 1 1 5A201CFF
+P 8850 2350
+F 0 "#PWR3" H 8850 2100 50  0001 C CNN
+F 1 "GND" H 8850 2200 50  0000 C CNN
+F 2 "" H 8850 2350 50  0001 C CNN
+F 3 "" H 8850 2350 50  0001 C CNN
+	1    8850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2350 8850 2250
+$Comp
+L ts4231_breakout-rescue:D_Photo D1
+U 1 1 5A201D54
+P 8550 1750
+F 0 "D1" H 8570 1820 50  0000 L CNN
+F 1 "BPW 34 S-Z" H 8510 1640 50  0000 C CNN
+F 2 "Opto-Devices:PhotoDiode_SMD-DIL2_4.5x4" H 8500 1750 50  0001 C CNN
+F 3 "" H 8500 1750 50  0001 C CNN
+	1    8550 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 1750 8750 1750
+Wire Wire Line
+	8750 1750 8750 1550
+Wire Wire Line
+	8750 1550 8550 1550
+Wire Wire Line
+	8550 1550 8550 1650
+Wire Wire Line
+	9650 1850 8750 1850
+Wire Wire Line
+	8750 1850 8750 2050
+Wire Wire Line
+	8750 2050 8550 2050
+Wire Wire Line
+	8550 2050 8550 1950
+Wire Wire Line
+	9650 2050 9550 2050
+Wire Wire Line
+	9550 2050 9550 2100
+Wire Wire Line
+	9550 2150 9650 2150
+$Comp
+L ts4231_breakout-rescue:C_Small C1
+U 1 1 5A201F3F
+P 9450 1450
+F 0 "C1" H 9460 1520 50  0000 L CNN
+F 1 "1.0uF" H 9460 1370 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9450 1450 50  0001 C CNN
+F 3 "" H 9450 1450 50  0001 C CNN
+	1    9450 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1650 9450 1650
+Wire Wire Line
+	9450 1650 9450 1550
+$Comp
+L ts4231_breakout-rescue:GND #PWR6
+U 1 1 5A202053
+P 9450 1250
+F 0 "#PWR6" H 9450 1000 50  0001 C CNN
+F 1 "GND" H 9450 1100 50  0000 C CNN
+F 2 "" H 9450 1250 50  0001 C CNN
+F 3 "" H 9450 1250 50  0001 C CNN
+	1    9450 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 1250 9450 1350
+$Comp
+L ts4231_breakout-rescue:GND #PWR7
+U 1 1 5A2020E6
+P 9450 2100
+F 0 "#PWR7" H 9450 1850 50  0001 C CNN
+F 1 "GND" H 9450 1950 50  0000 C CNN
+F 2 "" H 9450 2100 50  0001 C CNN
+F 3 "" H 9450 2100 50  0001 C CNN
+	1    9450 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 2100 9450 2100
+Connection ~ 9550 2100
+$Comp
+L ts4231_breakout-rescue:C_Small C2
+U 1 1 5A202193
+P 9550 2650
+F 0 "C2" H 9560 2720 50  0000 L CNN
+F 1 "0.1uF" H 9560 2570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9550 2650 50  0001 C CNN
+F 3 "" H 9550 2650 50  0001 C CNN
+	1    9550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2550 9550 2450
+Wire Wire Line
+	9150 2450 9250 2450
+$Comp
+L ts4231_breakout-rescue:GND #PWR5
+U 1 1 5A2021D9
+P 9400 2950
+F 0 "#PWR5" H 9400 2700 50  0001 C CNN
+F 1 "GND" H 9400 2800 50  0000 C CNN
+F 2 "" H 9400 2950 50  0001 C CNN
+F 3 "" H 9400 2950 50  0001 C CNN
+	1    9400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2850 9550 2750
+Text Label 9550 2250 2    60   ~ 0
+DATA
+Text Label 9550 2350 2    60   ~ 0
+ENV
+Wire Wire Line
+	9550 2250 9650 2250
+Wire Wire Line
+	9650 2350 9550 2350
+$Comp
+L ts4231_breakout-rescue:Conn_01x04 J1
+U 1 1 5A202A5F
+P 7850 2950
+F 0 "J1" H 7850 3150 50  0000 C CNN
+F 1 "Conn_01x04" H 7850 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 7850 2950 50  0001 C CNN
+F 3 "" H 7850 2950 50  0001 C CNN
+	1    7850 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L ts4231_breakout-rescue:GND #PWR1
+U 1 1 5A202B5A
+P 8150 3150
+F 0 "#PWR1" H 8150 2900 50  0001 C CNN
+F 1 "GND" H 8150 3000 50  0000 C CNN
+F 2 "" H 8150 3150 50  0001 C CNN
+F 3 "" H 8150 3150 50  0001 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3050 8150 3050
+Wire Wire Line
+	8150 3050 8150 3150
+$Comp
+L ts4231_breakout-rescue:+3.3V #PWR2
+U 1 1 5A202BA0
+P 8450 3150
+F 0 "#PWR2" H 8450 3000 50  0001 C CNN
+F 1 "+3.3V" H 8450 3290 50  0000 C CNN
+F 2 "" H 8450 3150 50  0001 C CNN
+F 3 "" H 8450 3150 50  0001 C CNN
+	1    8450 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8450 3150 8450 2950
+Wire Wire Line
+	8450 2950 8050 2950
+Text Label 8150 2750 0    60   ~ 0
+DATA
+Text Label 8150 2850 0    60   ~ 0
+ENV
+Wire Wire Line
+	8150 2750 8050 2750
+Wire Wire Line
+	8050 2850 8150 2850
+$Comp
+L ts4231_breakout-rescue:+3.3V #PWR4
+U 1 1 5A202E7F
+P 9150 2450
+F 0 "#PWR4" H 9150 2300 50  0001 C CNN
+F 1 "+3.3V" H 9150 2590 50  0000 C CNN
+F 2 "" H 9150 2450 50  0001 C CNN
+F 3 "" H 9150 2450 50  0001 C CNN
+	1    9150 2450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9550 2450
+$Comp
+L ts4231_breakout-rescue:C_Small C3
+U 1 1 5A203145
+P 9250 2650
+F 0 "C3" H 9260 2720 50  0000 L CNN
+F 1 "10uF" H 9260 2570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9250 2650 50  0001 C CNN
+F 3 "" H 9250 2650 50  0001 C CNN
+	1    9250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2450 9250 2550
+Connection ~ 9250 2450
+Wire Wire Line
+	9250 2750 9250 2850
+Wire Wire Line
+	9250 2850 9400 2850
+Wire Wire Line
+	9400 2850 9400 2950
+Connection ~ 9400 2850
+Wire Wire Line
+	9550 2100 9550 2150
+Wire Wire Line
+	9550 2450 9650 2450
+Wire Wire Line
+	9250 2450 9550 2450
+Wire Wire Line
+	9400 2850 9550 2850
+$EndSCHEMATC

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/hansihe/proj/fpga/openwatchman/hardware/ts4231_breakout/ts4231_breakout.sch</source>
+    <date>fr. 28. des. 2018 kl. 20.40 +0100</date>
+    <tool>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ts4231_breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>TS4231</value>
+      <footprint>random_stuff:WLCSP-3x3</footprint>
+      <datasheet>https://www.triadsemi.com/wp-content/uploads/dlm_uploads/2017/06/triad_semi_ts4231_datasheet_rev_a.pdf</datasheet>
+      <libsource lib="ts4231_breakout-rescue" part="TS4231" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A201B7B</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>15k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="R_Small" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A201C09</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BPW 34 S-Z</value>
+      <footprint>Opto-Devices:PhotoDiode_SMD-DIL2_4.5x4</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="D_Photo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A201D54</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1.0uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="C_Small" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A201F3F</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="C_Small" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A202193</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="Conn_01x04" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A202A5F</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="ts4231_breakout-rescue" part="C_Small" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A203145</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ts4231_breakout-rescue" part="C_Small">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ts4231_breakout-rescue" part="Conn_01x04">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ts4231_breakout-rescue" part="D_Photo">
+      <footprints>
+        <fp>*photodiode*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Photo</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ts4231_breakout-rescue" part="R_Small">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ts4231_breakout-rescue" part="TS4231">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TS4231</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="AVDD" type="input"/>
+        <pin num="A2" name="IIN+" type="input"/>
+        <pin num="A3" name="IIN-" type="input"/>
+        <pin num="B1" name="RBIAS" type="input"/>
+        <pin num="B2" name="AVSS" type="input"/>
+        <pin num="B3" name="AVSS2" type="input"/>
+        <pin num="C1" name="D" type="input"/>
+        <pin num="C2" name="E" type="input"/>
+        <pin num="C3" name="DVDD" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ts4231_breakout-rescue">
+      <uri>/home/hansihe/proj/fpga/openwatchman/hardware/ts4231_breakout/ts4231_breakout-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="B2"/>
+      <node ref="U1" pin="B3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="U1" pin="C3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="3" name="/ENV">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="C2"/>
+    </net>
+    <net code="4" name="/DATA">
+      <node ref="U1" pin="C1"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="5" name="Net-(D1-Pad2)">
+      <node ref="U1" pin="A2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="U1" pin="A3"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(R1-Pad1)">
+      <node ref="U1" pin="B1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(C1-Pad2)">
+      <node ref="U1" pin="A1"/>
+      <node ref="C1" pin="2"/>
+    </net>
+  </nets>
+</export>
